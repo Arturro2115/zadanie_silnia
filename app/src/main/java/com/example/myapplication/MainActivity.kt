@@ -18,10 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun sil(num: Int): Long {
-        return if (num <= 1) 1
-        else num * sil(num - 1)
-    }
+
 
     class MainActivity : AppCompatActivity() {
 
