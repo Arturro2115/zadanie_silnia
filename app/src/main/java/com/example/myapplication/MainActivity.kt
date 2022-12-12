@@ -60,21 +60,8 @@ class MainActivity : AppCompatActivity() {
                 index = if (index - 1 >= 0) index - 1 else 2
                 imgSwitcher?.setImageResource(GoW[index])
             }
-            findViewById<Button>(R.id.silnia).setOnClickListener {
-                var s = findViewById<EditText>(R.id.podaj).text.toString().toInt()
-
-                if (s == 1 || s == 0) findViewById<TextView>(R.id.wynik).text = "1"
-                else {
-                    var silnia = 1
-
-                    for (i in 1..s) {
-                        silnia *= i
-                    }
-                    findViewById<TextView>(R.id.wynik).text = silnia.toString()
-                }
 
 
             }
         }
     }
-}
